@@ -1,0 +1,95 @@
+div.contenedor{
+	background: yellow;
+	overflow: auto;
+}
+
+.contenedor2{
+	margin: 50px;
+	background: pink;
+	position: relative;
+}
+
+.caja{
+	width: 100px;
+	height: 100px;
+	display: inline-block;
+	background: blue;
+	color:white;
+}
+
+.relative{
+	position: relative;
+	top: 30px;
+	left: 30px;
+	background: violet;
+}
+
+.absolute{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	background: green;
+}
+
+.icono{
+	font-size: 110px;
+    color: red;
+}
+
+
+#app-spinner.loading{
+	background: white;
+	width: 100%;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	top:0;
+	left:0;
+	z-index:10;
+}
+	.spinner{
+		position:fixed;
+		top: 35%;
+		left: 50%;
+		margin-left: -70px;
+	}
+
+	.fa{
+		position: absolute;
+		top:0;
+		left: 0;
+		animation-name: sigueGirando;
+    	animation-duration: 4s;
+    	animation-iteration-count: infinite;
+    	animation-timing-function: linear;
+	}
+
+	.gear1{
+		font-size: 60px;
+	}
+	.gear2{
+		left: 49px;
+    	font-size: 40px;
+    	animation-direction: reverse;
+	}
+	.gear3{
+		top: 32px;
+    	left: 47px;
+    	font-size: 20px;
+	}
+	.gear4{
+		font-size: 80px;
+    	left: 78px;
+	}
+	.gear5{
+		top: 41px;
+   		left: 59px;
+    	font-size: 30px;
+    	animation-direction: reverse;
+	}
+
+
+@keyframes sigueGirando{
+	from{transform:rotate(0deg);}
+	to{transform:rotate(360deg);}
+}
